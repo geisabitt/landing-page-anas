@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   padding: 0;
@@ -9,26 +10,149 @@
   color: #000;
   font-weight: 400;
 }
-.navbar {
+
+.ctaComFoto section{
+  width: 100%;
   height: auto;
+  display: flex;
+
+}
+.ctaComFoto article{
+  margin: 5% auto;
+  width: 74%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+
+}
+.ctaComFoto h2{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+.ctaComFoto img{
+  width: 350px;
+}
+.ctaComFoto span{
   display: block;
-  justify-content: center;
+}
+.ctaComFoto p{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.ctaComFoto a{
+display: inline-block;
+margin-top: 20px;
+margin-left: 70%;
+background: #FF8AAF;
+padding: 10px 20px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+color: #470117;
+}
+
+.sobreProjeto{
+  background: #FFB9DB;
+}
+.sobreCentral img{
+  width: 400px;
+  border-radius: 50%;
+}
+.sobreColumm img{
+  width: 350px;
+}
+
+@media (min-width: 926px){
+#header {
+ 
+  box-sizing: border-box;
+  background-color: #FFF5F9;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 70px;
   border-bottom: 2px solid #bc2e5b;
   font-size: 24px;
 }
-.links {
+
+#links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.links li {
-  padding: 20px 15px;
+#links a {
+  padding: 10px 20px;
 }
 .buttonInscreva a {
-  padding: 15px 25px;
+
   border: 4px solid #470117;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
   border-radius: 10px;
   color: #620724;
+}
+#buttonMobile {
+  display: none;
+}
+}
+@media (max-width: 925px) {
+
+  #header{
+  background-color: #FFF5F9;
+  box-sizing: border-box;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid #bc2e5b;
+  font-size: 18px;
+  }
+
+  #buttonMobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 50%;
+    top: 80px;
+    right: 0px;
+    background:  #FFB9DB;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #links{
+    height: calc(100vh - 100px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #links a {
+    padding: 10px;
+    margin:10px;
+    border-bottom: 2px solid #E8618C;
+
+}
+}
+.arrowUp{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.arrowUp svg{
+  font-size: 1.5em;
+  color: #bc2e5b;
 }
