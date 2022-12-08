@@ -10,12 +10,19 @@
   color: #000;
   font-weight: 400;
 }
-
+h2{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 20px;
+}
+p{
+  margin-top: 20px;
+  font-size: 20px;
+}
 .ctaComFoto section{
   width: 100%;
   height: auto;
   display: flex;
-
 }
 .ctaComFoto article{
   margin: 5% auto;
@@ -27,19 +34,12 @@
   gap: 5%;
 
 }
-.ctaComFoto h2{
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 24px;
-}
 .ctaComFoto img{
+  margin-top: 20px;
   width: 350px;
 }
 .ctaComFoto span{
   display: block;
-}
-.ctaComFoto p{
-  margin-top: 20px;
-  font-size: 20px;
 }
 .ctaComFoto a{
 display: inline-block;
@@ -53,13 +53,41 @@ color: #470117;
 }
 
 .sobreProjeto{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   background: #FFB9DB;
 }
+.sobreProjeto{
+  width: 100%;
+}
+.sobreCentral{
+  display: grid;
+  width: 80%;
+  justify-items: center;
+  align-items: center;
+  margin: 5% auto;
+}
+.sobreColumm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
 .sobreCentral img{
-  width: 400px;
+  margin-top: 20px;
+  width: 350px;
   border-radius: 50%;
 }
+.sobreColumm{
+  width: 90%;
+  display: flex;
+  margin: 5% auto;
+}
 .sobreColumm img{
+  margin-top: 20px;
   width: 350px;
 }
 
