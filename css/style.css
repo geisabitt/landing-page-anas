@@ -92,13 +92,21 @@ color: #470117;
 .mainGaleria h2{
   margin: 40px auto 10px;
 }
-.gradeGaleria{
+.grade4colunas2linhas{
   margin: 40px Auto;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 200px);
   gap: 15px;
+}
+.grade3colunas2linhas{
+  margin: 40px Auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 30px;
 }
 .imgAjuste{
   width: 100%;
@@ -129,6 +137,8 @@ color: #470117;
   display: grid;
   background: linear-gradient(270deg, #FAEDCA , #EEB0B1 );
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .bgDegrade1 h2{
   text-align: center;
@@ -145,6 +155,8 @@ color: #470117;
   display: grid;
   background: linear-gradient(270deg, #EEB0B1, #FAEDCA);
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .bgDegrade2 h2{
   text-align: center;
