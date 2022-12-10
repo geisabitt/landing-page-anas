@@ -10,6 +10,12 @@
   color: #000;
   font-weight: 400;
 }
+.grade1l2c{
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
 h2{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 24px;
@@ -28,10 +34,6 @@ p{
   margin: 5% auto;
   width: 74%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  gap: 5%;
 
 }
 .ctaComFoto img{
@@ -43,6 +45,7 @@ p{
 }
 .ctaComFoto a{
 display: inline-block;
+font-weight: bold;
 margin-top: 20px;
 margin-left: 70%;
 background: #FF8AAF;
@@ -59,9 +62,7 @@ color: #470117;
   flex-wrap: wrap;
   background: #FFB9DB;
 }
-.sobreProjeto{
-  width: 100%;
-}
+
 .sobreCentral{
   display: grid;
   width: 80%;
@@ -69,13 +70,7 @@ color: #470117;
   align-items: center;
   margin: 5% auto;
 }
-.sobreColumm{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  gap: 5%;
-}
+
 .sobreCentral img{
   margin-top: 20px;
   width: 350px;
@@ -90,19 +85,61 @@ color: #470117;
   margin-top: 20px;
   width: 350px;
 }
+.ambiente{
+  width: 100%;
+  display: grid;
+}
+.ambiente h2{
+  margin: 40px auto;
+}
+.galeriaAmbiente{
+  margin: 20px Auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
+.imgAmbiente{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.itemAmbiente{
+  overflow: hidden;
+}
+.foto01{
+  grid-column: 1;
+  grid-row: 1/ span 2;
+}
+.foto02{
+  grid-column: 2;
+  grid-row: 1/ span 2;
+}
+.foto03{
+  grid-column: 3;
+  grid-row: 1/ span 2;
+}
+.foto04{
+  grid-column: 4;
+  grid-row: 1/ span 2;
+}
+
 
 @media (min-width: 926px){
 #header {
- 
   box-sizing: border-box;
   background-color: #FFF5F9;
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 26px 70px;
+  justify-content: space-around;
   border-bottom: 2px solid #bc2e5b;
   font-size: 24px;
+}
+#titleNav{
+margin-bottom: 15px;
 }
 
 #links {
