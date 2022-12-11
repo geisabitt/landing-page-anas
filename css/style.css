@@ -378,7 +378,7 @@ input:focus{
   bottom: 10px;
   right: 10px;
 }
-.arrowUp svg {
-  font-size: 1.5em;
+.arrowUp img {
+  font-size: 1.5vh;
   color: #bc2e5b;
 }
