@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Retiro de Mulheres Floresça</title>
+    <title>Retiro de Mulheres Frutifique</title>
   </head>
   <body>
-    <header id="header">
-      <nav id="nav">
+    <header class="container-fluid" id="header">
+      <nav class="container" id="nav">
         <nav id="navMobile">
           <h2 id="titleNavMobie">Retiro de mulheres Frutifique</h2>
-          <button id="buttonMobile">Menu</button>
+          <a
+            class="buttonInscreva"
+            href="https://form.jotform.com/220844458620658"
+            >Inscreva-se</a
+          >
+          <!--button id="buttonMobile">Menu</button-->
         </nav>
 
         <ul id="links">
@@ -27,19 +32,25 @@
         </ul>
       </nav>
     </header>
-    <a href="#header"
-      ><img
-        class="arrowUp"
-        src="img/icones/arrowCircleUp.svg"
-        alt="Icone voltar ao topo"
+    <a class="arrowUp" href="#header"
+      ><img src="img/icones/arrowCircleUp.svg" alt="Icone voltar ao topo"
     /></a>
-    <section class="ctaComFoto">
-      <article class="grade2colunas1linha">
-        <div>
-          <img src="img/institucional/Retiro-Anas-CTA-Topo.jpg" alt="" />
+    <!--Call to action com foto-->
+    <section class="ctaComFoto contaier-fluid">
+      <article class="grade2colunas1linha container">
+        <div class="img-institucional grid-center">
+          <img
+            class="displayNoneMobile"
+            src="img/institucional/Retiro-Anas-CTA-Topo.jpg"
+            alt="" />
         </div>
         <div>
-          <h2>Retiro de mulheres <span>Tema: Frutifique</span></h2>
+          <h2 class="title">
+            Retiro de mulheres <span>Tema: Frutifique</span>
+          </h2>
+          <div class="img-institucional grid-center displayNoneWeb">
+            <img src="img/institucional/Retiro-Anas-CTA-Topo.jpg" alt="" />
+          </div>
           <p>
             Uma imersão de 3 dias com muita palavra, louvores, teatro, palestras
             e testemunhos em um lugar tranquilo e preparado para acomodar nossas
@@ -49,14 +60,15 @@
         </div>
       </article>
     </section>
-    <section class="sobreProjeto">
-      <div class="sobreCentral">
-        <h2>Sobre o Projeto</h2>
+    <!--Sobre o Projeto-->
+    <section class="sobreProjeto contaier-fluid">
+      <div class="sobreCentral grid-center contaier">
+        <h2 class="title">Sobre o Projeto</h2>
         <img src="img/institucional/logo-anas.jpeg" alt="" />
       </div>
-      <div class="sobreColumm">
+      <div class="sobreColumm container grade2colunas1linha">
         <div>
-          <h2>Resgatando Anas - Você é terra Fértil</h2>
+          <h2 class="title">Resgatando Anas - Você é terra Fértil</h2>
           <p>
             Ana foi uma mulher estéril e o Senhor trouxe fertilidade sobre a
             vida dela, a função desse projeto é isso trazer fertilidade na área
@@ -66,14 +78,15 @@
             e conseguir enxergar em Cristo há esperança para vida dela.
           </p>
         </div>
-        <div>
+        <div class="grid-center">
           <img src="img/institucional/Retiro-Anas-Sobre-Projeto.JPG" alt="" />
         </div>
       </div>
     </section>
-    <section class="mainGaleria">
-      <h2>Ambiente do Retiro</h2>
-      <div class="grade4colunas2linhas">
+    <!--Galeria do Ambiente-->
+    <section class="mainGaleria container">
+      <h2 class="title">Ambiente do Retiro</h2>
+      <div class="galeria-ambiente">
         <figure class="itemAjuste foto01">
           <img
             src="img/institucional/alojamentos/FotoRetiroAnas-0001.png"
@@ -100,10 +113,11 @@
         </figure>
       </div>
     </section>
+    <!--Galeria 2021-->
     <section id="galeria" class="mainGaleria">
       <div class="bgDegrade1">
-        <h2>Galeria de Fotos: <span>Retiro Raízes 2021</span></h2>
-        <div class="grade3colunas2linhas">
+        <h2 class="title">Galeria de Fotos: <span>Retiro Raízes 2021</span></h2>
+        <div class="galeria-fotos">
           <figure class="itemAjuste">
             <img
               src="img/retiro2021/Retiro-Anas-Raizes2021-0001.jpg"
@@ -143,8 +157,10 @@
         </div>
       </div>
       <div class="bgDegrade2">
-        <h2>Galeria de Fotos: <span>Retiro Floresça 2022</span></h2>
-        <div class="grade3colunas2linhas">
+        <h2 class="title">
+          Galeria de Fotos: <span>Retiro Floresça 2022</span>
+        </h2>
+        <div class="galeria-fotos">
           <figure class="itemAjuste">
             <img
               src="img/retiro2022/Retiro-Anas-2022-0003.JPG"
@@ -184,21 +200,23 @@
         </div>
       </div>
     </section>
-    <section class="idealizadoras grade2colunas1linha">
-      <p>
-        Projeto testificado através das vidas da
-        <span>diaconisa Gloria e Pastora Fernanda</span>
-      </p>
-      <img src="img/institucional/idealizadora.jpg" alt="" />
+    <section class="idealizadoras">
+      <div class="grade2colunas1linha">
+        <p>
+          Projeto testificado através das vidas da
+          <span>diaconisa Gloria e Pastora Fernanda</span>
+        </p>
+        <img src="img/institucional/idealizadora.jpg" alt="" />
+      </div>
     </section>
-    <section class="ctaSemFoto">
+    <section class="ctaSemFoto grid-center">
       <h2>Para viver momentos transformadores</h2>
       <a href="https://form.jotform.com/220844458620658">Inscreva-se</a>
     </section>
-    <section id="contato" class="formContato">
-      <h2>Contato</h2>
+    <section id="contato" class="formContato container">
+      <h2 class="title">Contato</h2>
       <section class="grade2colunas1linha">
-        <div>
+        <div class="grid-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.6057445750534!2d-43.47816224085593!3d-22.70409879360167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9969e62da7906b%3A0xa02d401ef8a85df6!2sMinist%C3%A9rio%20Prof%C3%A9tico%20Adonai%20em%20Corumb%C3%A1!5e0!3m2!1sen!2sbr!4v1670709996100!5m2!1sen!2sbr"
             width="350"
@@ -208,7 +226,6 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
         <form id="formulario">
           <div>
             <label>Nome:</label>
@@ -223,16 +240,23 @@
           </div>
           <div>
             <label>Mensagem:</label>
-            <textarea id="mensagem" type="text">Quero saber mais sobre o retiro</textarea>
+            <textarea id="mensagem" type="text">
+Quero saber mais sobre o retiro</textarea
+            >
           </div>
-          <button id="enviarWhatsapp" onclick="enviarMensagem()">Enviar Mensagem</button>
+          <button id="enviarWhatsapp" onclick="enviarMensagem()">
+            Enviar Mensagem
+          </button>
         </form>
       </section>
     </section>
-    <section class="informacoesContato">
+    <section class="informacoesContato container">
       <h2 class="titleInformacoes">Retiro de mulheres - Tema: Frutifique</h2>
       <section class="grade2colunas1linha">
-        <img src="img/institucional/logo-anas.jpeg" alt="" />
+        <div class="img-institucional grid-center">
+          <img src="img/institucional/logo-anas.jpeg" alt="" />
+        </div>
+
         <div>
           <h2>Dúvidas e informações</h2>
           <p>
