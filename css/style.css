@@ -7,7 +7,6 @@
   text-decoration: none;
   list-style: none;
   font-family: "Dosis", Arial, Helvetica, sans-serif;
-  color: #000;
   font-weight: 400;
   color: #0d0d0d;
 }
@@ -37,13 +36,23 @@ img {
   padding-top: 20px;
   max-width: 300px;
 }
+.btn-rosa {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 20px;
+  background: #ff8aaf;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  color: #470117;
+}
 
 .grid-center {
   display: grid;
   justify-items: center;
   justify-content: center;
 }
-.contaier-fluid {
+.container-fluid {
   width: 100%;
   justify-items: center;
   align-items: center;
@@ -109,7 +118,7 @@ img {
 #links {
   display: none;
 }
-#header {
+header {
   border-bottom: 2px solid #e8618c;
 }
 #navMobile {
@@ -369,4 +378,36 @@ img {
 .arrowUp img {
   font-size: 1.5vh;
   color: #bc2e5b;
+}
+/*pagina de obrigado*/
+.obrigado h2 {
+  text-align: center;
+  font-size: 30px;
+}
+#acoes .container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.mercado-pago,
+.pix {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin: 20px auto;
+}
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 728px) {
+  #acoes .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mercado-pago,
+  .pix {
+    width: 90%;
+  }
 }
