@@ -14,7 +14,7 @@ function enviarMensagem() {
 
   if (!nome || nome.length < 3) {
     erros +=
-      "O campo Nome deve conter no mínimo 3 letras e apenas letras e espaços.\n<br>";
+      "O campo nome deve conter no mínimo 3 letras e apenas letras e espaços.\n<br>";
   }
 
   if (!celular || celular.length !== 11 || isNaN(celular)) {
@@ -34,13 +34,6 @@ function enviarMensagem() {
   }
 
   celularInput.value = celular.slice(0, 11);
-  var limiteNumeros = document.querySelector("#celular");
-
-  limiteNumeros.addEventListener("input", function () {
-    if (limiteNumeros.value.length > 11) {
-      limiteNumeros.value = limiteNumeros.value.slice(0, 11);
-    }
-  });
 
   let urlApi = "https://api.whatsapp.com/send?phone=5521982708329&text=";
 
@@ -81,5 +74,16 @@ var limiteNumeros = document.querySelector("#celular");
 limiteNumeros.addEventListener("input", function () {
   if (limiteNumeros.value.length > 11) {
     limiteNumeros.value = limiteNumeros.value.slice(0, 11);
+  }
+});
+
+var mensagemInput = document.querySelector("#mensagem");
+var contador = document.querySelector("#contador");
+mensagemInput.addEventListener("input", function () {
+  var mensagem = mensagemInput.value;
+  contador.innerText = mensagem.length;
+  if (mensagem.length > 700) {
+    mensagemInput.value = mensagem.slice(0, 700);
+    contador.innerText = 700;
   }
 });

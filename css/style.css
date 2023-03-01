@@ -411,3 +411,12 @@ header {
     width: 90%;
   }
 }
+.contador,
+.contador span {
+  display: flex;
+  font-size: 16px;
+  justify-content: right;
+}
+.contador {
+  padding-right: 30px;
+}
