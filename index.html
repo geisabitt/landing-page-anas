@@ -8,7 +8,7 @@
     <title>Retiro de Mulheres Frutifique</title>
   </head>
   <body>
-    <header class="container-fluid" id="header">
+    <header id="header">
       <nav class="container" id="nav">
         <nav id="navMobile">
           <h2 id="titleNavMobie">Retiro de mulheres Frutifique</h2>
@@ -227,24 +227,36 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <form id="formulario">
+          <div id="erro" style="display: none"></div>
           <div>
             <label>Nome:</label>
-            <input id="nome" type="text" placeholder="Digite seu nome aqui" />
+            <input
+              id="nome"
+              type="text"
+              placeholder="Digite seu nome aqui"
+              maxlength="40"
+              required />
           </div>
           <div>
             <label>Telefone:</label>
             <input
               id="celular"
               type="number"
-              placeholder="Digite seu Telefone com DDD" />
+              placeholder="Digite seu telefone com DDD"
+              maxlength="11"
+              required />
           </div>
           <div>
             <label>Mensagem:</label>
-            <textarea id="mensagem" type="text">
+            <textarea id="mensagem" type="text" required>
 Quero saber mais sobre o retiro</textarea
             >
           </div>
-          <button type="button" id="enviarWhatsapp" onclick="enviarMensagem()">
+          <button
+            type="button"
+            id="enviarWhatsapp"
+            maxlength="700"
+            onclick="enviarMensagem()">
             Enviar Mensagem
           </button>
         </form>
